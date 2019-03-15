@@ -1,0 +1,8 @@
+60000行mnist.train
+10000行mnist.test
+
+每个样本28*28=784,像素强度0-1
+因此mnist.train.images.shape == [60000,784] 需要reshape来分割各个样本
+
+标签含义0-9的数字，但是用one-hot vectors形式表示，因此
+mnist.train.labels.shape  == [6000,10]
